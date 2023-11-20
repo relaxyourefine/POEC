@@ -15,6 +15,6 @@ def highlight_cells(value):
 
 styled_df = df.style.applymap(highlight_cells, subset=['abstract'])
 
-writer = pd.ExcelWriter('Ver2.xlsm')
-styled_df.to_excel(writer,engine="io.excel.xlsm.writer")
+writer = pd.ExcelWriter('Ver2.xlsx')
+styled_df.to_excel(writer)
 writer.save()
